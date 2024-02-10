@@ -14,7 +14,8 @@ if uploaded_file is not None:
     # アップロードされた画像を FastAPI に送信して解析結果を取得
     if st.button('解析開始'):
         # FastAPI のエンドポイント URL
-        api_endpoint = "http://127.0.0.1:8000/analyze_image/"
+        #api_endpoint = "http://127.0.0.1:8000/analyze_image/"
+        api_endpoint = "https://calculation-scoring.onrender.com/analyze_image/"
 
         try:
             # POST リクエストを送信して解析結果を取得
